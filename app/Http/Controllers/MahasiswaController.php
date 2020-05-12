@@ -31,7 +31,7 @@ class MahasiswaController extends Controller
             'Name' => 'required|max:20',
             'Faculty' => 'required',
             'NIM' => 'required|max:30',
-            'Gender' => 'required',
+            'Gender' => "",
         ]);
 
         $post = new Mahasiswa([

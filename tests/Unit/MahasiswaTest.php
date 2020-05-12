@@ -27,6 +27,6 @@ class MahasiswaTest extends TestCase
             'Gender' => 'Female'
         ];
 
-        $this->json('POST', '/api/mahasiswas', $input)->assertStatus(200);
+        $this->json('POST', '/create', $input)->assertStatus(200);
     }
 }
