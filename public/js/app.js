@@ -70888,9 +70888,7 @@ var Create = function Create() {
             case 7:
               _context.prev = 7;
               _context.t0 = _context["catch"](1);
-              alert(function (errors) {
-                console.log(errors);
-              });
+              console.log(_context.t0);
 
             case 10:
               _context.prev = 10;
@@ -71056,7 +71054,7 @@ var Edit = function Edit() {
             case 7:
               _context.prev = 7;
               _context.t0 = _context["catch"](1);
-              alert('Failed to Edit mahasiswa!');
+              console.log(_context.t0);
 
             case 10:
               _context.prev = 10;
@@ -71261,8 +71259,8 @@ var Home = function Home() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\kuliah\uas_iai\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\kuliah\uas_iai\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\responsi\mahasiswa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\responsi\mahasiswa\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

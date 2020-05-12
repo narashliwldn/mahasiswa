@@ -18,10 +18,8 @@ const Create = () => {
 				Name, Faculty, NIM, Gender,
 			})
 			history.push('/');
-		}	catch {
-			alert(errors => {
-				console.log(errors);
-			})
+		}	catch (error){
+			console.log(error);
 		}	finally {
 			setLoading(false);
 		}

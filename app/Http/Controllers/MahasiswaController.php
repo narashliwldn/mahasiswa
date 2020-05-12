@@ -28,9 +28,9 @@ class MahasiswaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'Name' => 'required',
+            'Name' => 'required|max:20',
             'Faculty' => 'required',
-            'NIM' => 'required',
+            'NIM' => 'required|max:30',
             'Gender' => 'required',
         ]);
 
@@ -44,7 +44,7 @@ class MahasiswaController extends Controller
 
         $post->save();
         return response()->json([
-            'data' => 'Catalog created!'
+            'status' => 'Catalog created!'
         ]);
     }
 
@@ -84,7 +84,7 @@ class MahasiswaController extends Controller
 
         $mahasiswa->update();
         return response()->json([
-            'data' => 'Catalog update!'
+            'status' => 'Catalog update!'
         ]);
     }
 
@@ -99,7 +99,7 @@ class MahasiswaController extends Controller
         $mahasiswa = Mahasiswa::findOrFail($id);
         $mahasiswa->delete();
         return response()->json([
-            'data' => 'Catalog deleted!'
+            'status' => 'Catalog deleted!'
         ]);
     }
 }
